@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#12091d" />
+    <meta name="description" content="A little birthday surprise ❤️" />
+
+    <title>Just For You ❤️</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Ambient background -->
+    <div class="background">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+      <div id="stars"></div>
+      <div id="floatingHearts"></div>
+    </div>
+
+    <!-- Music control -->
+    <button
+      id="musicToggle"
+      class="music-toggle"
+      type="button"
+      aria-label="Toggle music"
+    >
+      ♫ Music
+    </button>
+
+    <!-- =====================================================
+         MAIN EXPERIENCE
+    ====================================================== -->
+
+    <main id="app">
+      <!-- =================================================
+             1. CALLING HER
+        ================================================== -->
+
+      <section class="scene active" id="scene-1">
+        <div class="content intro">
+          <div class="eyebrow">SOMETHING FOR YOU</div>
+
+          <div class="big-heart">♡</div>
+
+          <h1>
+            Heyy,
+            <span class="accent" data-name>My Queen</span>
+            ❤️
+          </h1>
+
+          <p class="subtitle">
+            My Queen, what orders do you have for your Knight?
+          </p>
+
+          <p class="small-copy">
+            I made something that could hold all the words I struggle to say,
+            <br />
+            A quiet collection of everything that reminds me of you.
+          </p>
+
+          <button class="primary-btn next" data-next="scene-2" type="button">
+            Come, discover. ✨
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================
+             2. HAPPY BIRTHDAY
+        ================================================== -->
+
+      <section class="scene" id="scene-2">
+        <div class="content birthday">
+          <div class="cake">🎂</div>
+
+          <div class="eyebrow">Your beautiful day begins</div>
+
+          <h2 class="birthday-title">Happy Birthday</h2>
+
+          <h3 class="birthday-name" data-name>My Pancake</h3>
+
+          <div class="ornaments">
+            <span>✦</span>
+            <span>♡</span>
+            <span>✦</span>
+          </div>
+
+          <p class="large-copy" id="birthdayMessage">
+            Today, We celebrate the beautiful soul that you are.
+          </p>
+
+          <p class="soft-copy">
+            May your day be filled with the same joy you leave wherever you go.
+          </p>
+
+          <button class="primary-btn next" data-next="scene-3" type="button">
+           Shall we continue? 💗
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================
+             3. SWEET MESSAGE
+        ================================================== -->
+
+      <section class="scene" id="scene-3">
+        <div class="content">
+          <div class="eyebrow">Before your day unfolds…</div>
+
+          <div class="glass-card">
+            <div class="card-symbol">♥</div>
+
+            <h2>There’s something I want you to know before anything else.</h2>
+
+            <p>
+             I wanted to pause for a moment and say something that words never quite seem to capture.
+            </p>
+
+            <p class="highlight">I’m grateful that you exist, and even more grateful that our paths crossed.</p>
+
+            <p>
+              Somehow, knowing you has made ordinary moments feel a little more special, and I hope today gives you a glimpse of how special you are.
+            </p>
+
+            <button class="primary-btn next" data-next="scene-4" type="button">
+              Keep Going, Miss. ✨
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             4. THINGS THAT MAKE HER SPECIAL
+        ================================================== -->
+
+      <section class="scene" id="scene-4">
+        <div class="content wide">
+          <div class="eyebrow">A few things I adore more…</div>
+
+          <h2 class="section-title">
+            The little things that make 
+            <span class="accent">YOU</span>
+            extraordinary.
+          </h2>
+
+          <p class="instruction">Tap each card and discover a little something I love about you.</p>
+
+          <div class="special-grid" id="specialGrid"></div>
+
+          <p class="bottom-line">
+            And honestly… I could find a thousand more reasons. ♡
+          </p>
+
+          <button class="primary-btn next" data-next="scene-5" type="button">
+            There’s more, Babe 💗 
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================
+             5. BEGINNING / EXTREME LOVE / FUTURE
+        ================================================== -->
+
+      <section class="scene" id="scene-5">
+        <div class="content wide">
+          <div class="eyebrow">A story worth remembering…</div>
+
+          <h2 class="section-title">
+            A Story Called US
+            <span class="accent">♡</span>
+          </h2>
+
+          <p class="instruction">From the moment our paths crossed to all the moments that followed.</p>
+
+          <div class="story">
+            <article class="story-card">
+              <div class="story-number">01</div>
+
+              <div class="story-icon">💌</div>
+
+              <h3>Where it all began</h3>
+
+              <p id="storyBeginning">
+                done
+              </p>
+            </article>
+
+            <article class="story-card featured">
+              <div class="story-number">02</div>
+
+              <div class="story-icon">💗</div>
+
+              <h3>When We Became Us</h3>
+
+              <p id="storyLove">
+                done
+              </p>
+            </article>
+
+            <article class="story-card">
+              <div class="story-number">03</div>
+
+              <div class="story-icon">✨</div>
+
+              <h3>On Our Way to Forever</h3>
+
+              <p id="storyFuture">
+               done
+              </p>
+            </article>
+          </div>
+
+          <button class="primary-btn next" data-next="scene-6" type="button">
+            One more thing... 💌
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================
+             6. PERSONAL LETTER
+        ================================================== -->
+
+      <section class="scene" id="scene-6">
+        <div class="content letter-scene">
+          <div class="eyebrow">A little piece of my heart, just for you… ❤️</div>
+
+          <h2 class="section-title small-title">
+           Words I’ve been saving just for you… 💌✨
+          </h2>
+
+          <!-- Envelope -->
+          <div
+            class="envelope"
+            id="envelope"
+            tabindex="0"
+            role="button"
+            aria-label="Open the letter"
+          >
+            <div class="envelope-back"></div>
+
+            <div class="letter-paper">
+              <div class="letter-content">
+                <div class="letter-heart">♡</div>
+
+                <h3>My Sunshine ❤️</h3>
+
+                <p id="letterText">
+                  Done
+                </p>
+
+                <div class="signature">With all my heart ♡</div>
+              </div>
+            </div>
+
+            <div class="envelope-front"></div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-heart">♥</div>
+          </div>
+
+          <p class="envelope-hint" id="envelopeHint">
+            Tap the little envelope to unwrap your surprise 💌✨
+
+          </p>
+
+          <button
+            class="primary-btn next letter-button"
+            data-next="scene-7"
+            id="letterButton"
+            type="button"
+          >
+            Something More… 🎂💗
+
+          </button>
+        </div>
+      </section>
+
+      <!-- =================================================
+             7. FINAL BIRTHDAY
+        ================================================== -->
+
+      <section class="scene finale" id="scene-7">
+        <canvas id="fireworks"></canvas>
+
+        <div id="confetti"></div>
+
+        <div class="content finale-content">
+          <div class="eyebrow">Once again...</div>
+
+          <div class="final-cake">🎂</div>
+
+          <p class="final-small">HAPPIEST 18th BIRTHDAY, GORGEOUS</p>
+
+          <h2 class="final-name" data-name>MY LOVE</h2>
+
+          <div class="final-stars">✦ &nbsp; ♡ &nbsp; ✦</div>
+
+          <p class="final-message">
+           May this new year bring you endless reasons to smile, memories you’ll cherish forever, peaceful days, and all the little things your heart has been wishing for.
+          </p>
+
+          <p class="final-love">Happy Birthday once again, My Favourite Meal. ❤️</p>
+
+          <button id="replayButton" class="primary-btn" type="button">
+            Wanna replay, Master ♡ ↻
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Secret heart -->
+    <button
+      id="secretHeart"
+      class="secret-heart"
+      type="button"
+      aria-label="Secret"
+    >
+      ♡
+    </button>
+
+    <div id="secretMessage" class="secret-message">
+      <strong>P.S. 💗</strong>
+      <br />
+    I MISS YOU SO MUCHHH
+      <small> I WISH, I COULD HUG AND KISS YOU <br>I LOVE YOU VERY MUCH <br> YOU ARE MY EVERYTHING </small>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
